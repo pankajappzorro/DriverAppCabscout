@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/titleRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FECC18"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="RATING"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleRating"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout1">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTime"
+            android:text="25 July"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlack" />
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="06:16 pm"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout2">
+    <TextView
+        android:id="@+id/tvTotalfare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 26.30"
+        android:textColor="#FA816E"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_below="@id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:id="@+id/tvHwride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How was ride?"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+        <RatingBar
+            android:id="@+id/rbUserrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEFEF"
+        android:gravity="top|left"
+        android:hint="Enter your Comment"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp" />
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_yellow"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3">
+        <TextView
+            android:id="@+id/tvDisscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$2.40 "
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+             />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="discount applied"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+</RelativeLayout>
